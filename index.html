@@ -3,64 +3,182 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Солнечная система</title>
-	<style type="text/css">
-		.canvas{
-			height: 1500px;
-			width: 1500px;
-			background-color: black;
-			background:
-				radial-gradient(
-					circle at 150px 750px,
-					brown 25px 26px,
-					transparent 27px 28px
-				),
-				radial-gradient(
-					circle at 1250px 750px,
-					red 15px 16px,
-					transparent 17px 18px
-				),
-				radial-gradient(
-					circle at 350px 750px,
-					blue 20px 21px,
-					transparent 22px 23px
-				),
-				radial-gradient(
-					circle at 1050px 750px,
-					brown 17px 18px,
-					transparent 19px 20px
-				),
-				radial-gradient(
-					circle at 550px 750px,
-					grey 10px 11px,
-					transparent 12px 13px
-				),
-			/*Орбиты*/
-				radial-gradient(
-					ellipse 400px 200px at 750px 750px,
-					transparent 198px 199px,
-					white 200px 202px,
-					transparent 203px 299px,
-					white 300px 302px,
-					transparent 303px 399px,
-					white 400px 402px,
-					transparent 403px 499px,
-					white 500px 502px,
-					transparent 503px 599px,
-					white 600px 602px,
-					transparent 603px 699px
-				), 
-			/*Солнце*/
-				radial-gradient(
-					circle at 750px 750px,
-					rgb(255 255 0) 100px 101px,
-					transparent 110px
-				);
-			background-color: black;
+	<title>RUFlix</title>
+	<style>
+		iframe{
+			border-radius: 15px;
+		}
+
+		div{
+			border-radius: 15px;
+		}
+
+		p{
+			color: white;
+			font-size: 30px;
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			letter-spacing: 0.1em;
+		}
+
+		.button{
+			width: 300px;
+			height: 3em;
+			background: linear-gradient(0deg, #555555, #FFFFFF, #aaaaaa);
+			margin-top: 0;
+			box-shadow: 10px 10px 10px black;
+		}
+
+		.button:hover{
+			box-shadow: inset 0 0 15px #111111;
+			box-shadow: 10px 10px 10px black;
+		}
+
+		.button p{
+			color: red;
+			font-family: kroftsmann;
+		}
+
+		input{
+			display: none;
+		}
+
+		input:checked + label .button{
+			background: radial-gradient(
+				circle at 50% 50%,
+				#00FF00,
+				#008800
+			);
+		}
+
+		.option{
+			display: none;
+			position: absolute;
+			left: 360px;
+			top: 190px;
+			width: auto;
+			height: auto;
+		}
+
+		input:checked + label .button .option{
+			display: block;
+		}
+
+		h1{
+			font-size: 60px;
+			font-family: kroftsmann;
+		}
+
+		.amogus{
+			font-family: kroftsmann;
+			font-size: 10px;
+			color: #cc0000;
+			width: auto;
+			height: auto;
+			text-align: left;
+		}
+
+		body{
+			background-image: url("pic/babushka_s_flagom.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		#putin{
+			height: 5em;
+		}
+
+		.logo{
+			width: 400px;
+			height: 5em;
+			background: linear-gradient(0deg, #FF0000 33%, #0000FF 34% 66%, #FFFFFF 67% 100%);
+		}
+
+		.logo h1 {
+			letter-spacing: 15px;
+			width: 100%;
+			text-align: center;
+			color: #FFFFFF;
+			margin-top: -138px;
+			font-weight: 100;
+			font-size: 55px;
+		}
+
+		.logo p{
+			color: black;
+			letter-spacing: 0.2em;
+			font-size: 60px;
+			font-family: kroftsmann;
+			font-weight: 900;
+		}
+
+		.video-backgound{
+			background-image: url("pic/televizor.jpg");
+			position: absolute;
+			top:0px;
+			left:0px;
+			background-size: cover;
+			height: 740px;
+			aspect-ratio: 1000/676;
 		}
 	</style>
 </head>
 <body>
-	<div class="canvas"></div>
+	<!--<div class="video-backgound"></div>-->
+	<div class="logo">
+		<p>RUFlix</p>
+		<h1>RUFlix</h1>
+	</div>
+	<p class="amogus">Ну типа как Netflix только RUFlix</p>
+	<div class="wraper">
+		<form>
+			<input type="radio" name="one" id="one">
+			<label for="one">
+				<div class="button">
+					<p>Азбука СВО серия 1</p>
+					<div class="option">
+						<iframe width="1272" height="720" src="https://www.youtube.com/embed/cK0kIkTwAOc" title="Азбука СВО - Как вести себя в условиях городского боя в озвучке Ивана Охлобыстина" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</label>
+			<input type="radio" name="one" id="two">
+			<label for="two">
+				<div class="button">
+					<p>Азбука СВО серия 2</p>
+					<div class="option">
+						<iframe width="1280" height="700" src="https://www.youtube.com/embed/XcRyuwzkj2c" title="Азбука СВО - Как обращаться с личным оружием в озвучке Ивана Охлобыстина" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</label>
+			<input type="radio" name="one" id="three">
+			<label for="three">
+				<div class="button">
+					<p>Азбука СВО серия 3</p>
+					<div class="option">
+						<iframe width="1272" height="720" src="https://www.youtube.com/embed/b77ajghw7kM" title="Азбука СВО Как правильно штурмовать здание" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</label>
+			<input type="radio" name="one" id="four">
+			<label for="four">
+				<div class="button" id="putin">
+					<p>Владимир Путин молодец</p>
+					<div class="option">
+						<iframe width="1280" height="720" src="https://www.youtube.com/embed/OJ5BzFXr434" title="Владимир Путин Молодец! (Лучшая песня о президенте России)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</label>
+			<input type="radio" name="one" id="five">
+			<label for="five">
+				<div class="button" id="putin">
+					<p>Шойгу, герасимов, где боеприпасы</p>
+					<div class="option">
+						<iframe width="1280" height="720" src="https://www.youtube.com/embed/dIbJuJbR5_E" title="«Шойгу, Герасимов, где боеприпасы?»" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</label>
+		</form>
+	</div>
 </body>
 </html>
