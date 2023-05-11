@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Скатерть 2</title>
+	<style type="text/css">
+		.skatert{
+			width: 1500px;
+			height: 1500px;
+			background: 
+				repeating-linear-gradient(
+				90deg, 
+				rgba(255, 0, 0, 0.5) 10px 11px,
+				transparent 12px 31px,
+				rgba(255, 0, 0, 0.5) 32px 41px,
+				transparent 42px 61px,
+				rgba(255, 0, 0, 0.5) 62px 71px,
+				transparent 72px 91px,
+				rgba(255, 0, 0, 0.5) 92px 100px
+				),
+				repeating-linear-gradient(
+				0deg, 
+				rgba(255, 0, 0, 0.5) 10px 11px,
+				transparent 12px 31px,
+				rgba(255, 0, 0, 0.5) 32px 41px,
+				transparent 42px 61px,
+				rgba(255, 0, 0, 0.5) 62px 71px,
+				transparent 72px 91px,
+				rgba(255, 0, 0, 0.5) 92px 100px
+				);
+			background-repeat: repeat;
+			background-size: 200px 200px;
+		}
+
+		.krug{
+			height: 800px;
+			width: 800px;
+			background: 
+			/*Фреди Меркурий*/
+				radial-gradient(
+				circle at 503px 533px,
+				brown 50px 51px,
+				transparent 52px 
+				),
+			/*Орбита*/
+				radial-gradient(
+				ellipse 400px 200px at 50% 50%,
+				transparent 300px 301px,
+				white 302px 304px,
+				transparent 305px),
+			/*Солнце*/
+				radial-gradient(
+				circle at 50% 50%, 
+				yellow 100px 101px, 
+				orange 102px 103px,
+				black 200px
+			);
+		}
+	</style>
+</head>
+<body>
+	<div class="skatert"></div>
+	<br>
+	<div class="krug"></div>
+</body>
+</html>
+<!--
+	radial-gradient(1) ending-shape, ||2)size, 3)at position, 4)list-color-stop)
+-->
