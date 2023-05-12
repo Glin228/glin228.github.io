@@ -1,5 +1,9 @@
+html{
+	font-family: System-UI;
+}
+
 .wraper{
-	background-color: #aaaaaa;
+	backdrop-filter: blur(10px);
 }
 
 .site{
@@ -22,10 +26,12 @@ hr{
 body{
 	padding: 0px;
 	margin: 0px;
+	background-image: url("bg.jpg");
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 h1{
-	font-family: Calibri;
 	font-weight: 100;
 	font-size: 80px;
 	height: 100%;
@@ -43,46 +49,43 @@ h1{
 }
 
 h2{
-	font-family: Calibri;
 	font-size: 35px;
 	margin-left: 15px;
 }
 
 h3{
-	font-family: Calibri;
 	font-size: 25px;
 	color: #222222;
 	margin-left: 15px;
 }
 
 #first-p{
-	width: 60%;
+	width: 50%;
 	float: left;
 }
 
 #first-p + img{
 	float: right;
-	width: 29%;
+	box-sizing: content-box;
+	width: 42%;
 }
 
 .text{
 	font-size: 25px;
-	margin: 0 15px 0 30px;
-	font-family: Helvetica;
+	margin: 20px 15px 10px 30px;
 	text-indent: 1.5em;
+	line-height: 1.5;
 }
 
 li p{
 	font-size: 25px;
 	margin-left: 30px;
-	font-family: Helvetica;
 }
 
 .podpis{
 	font-size: 15px;
 	margin-left: 15px;
 	color: #aaaaaa;
-	font-family: Helvetica;
 	margin-top: -3px;
 }
 
@@ -93,4 +96,8 @@ img{
 
 .filler{
 	height: 10px;
+}
+
+img + h2{
+	width: 100px;
 }
