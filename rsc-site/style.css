@@ -10,7 +10,7 @@ html{
 	min-width: 400px;
 	/*height: 1000px;*/
 	width: 55%;
-	margin: -29px auto 0 ;
+	margin: -20px auto 0 ;
 	background-color: #ffffff;
 }
 
@@ -33,10 +33,9 @@ body{
 
 h1{
 	font-weight: 100;
-	font-size: 80px;
-	height: 100%;
-	width: 60%;
-	color: #FFFFFF;
+	font-size: 40px;
+	width: 100%;
+	color: #000000;
 	float: right;
 }
 
@@ -57,17 +56,6 @@ h3{
 	font-size: 25px;
 	color: #222222;
 	margin-left: 15px;
-}
-
-#first-p{
-	width: 50%;
-	float: left;
-}
-
-#first-p + img{
-	float: right;
-	box-sizing: content-box;
-	width: 42%;
 }
 
 .text{
@@ -100,4 +88,8 @@ img{
 
 img + h2{
 	width: 100px;
+}
+
+iframe{
+	margin: 0 0 0 30px;
 }
