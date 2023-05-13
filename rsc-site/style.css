@@ -93,3 +93,7 @@ img + h2{
 iframe{
 	margin: 0 0 0 30px;
 }
+
+li{
+	line-height: 1.5;
+}
