@@ -4,6 +4,7 @@ html{
 
 .wraper{
 	backdrop-filter: blur(10px);
+	min-height: 1200px;
 }
 
 .site{
@@ -12,6 +13,7 @@ html{
 	width: 55%;
 	margin: -20px auto 0 ;
 	background-color: #ffffff;
+	padding-bottom: 30px;
 }
 
 hr{
@@ -34,9 +36,12 @@ body{
 h1{
 	font-weight: 100;
 	font-size: 40px;
-	width: 100%;
+	width: calc(100% - 30px);
 	color: #000000;
 	float: right;
+	margin-left: 30px;
+	font-weight: 700;
+	text-align: center;
 }
 
 .header img{
@@ -68,6 +73,7 @@ h3{
 li p{
 	font-size: 25px;
 	margin-left: 30px;
+	line-height: 1.5;
 }
 
 .podpis{
@@ -94,6 +100,6 @@ iframe{
 	margin: 0 0 0 30px;
 }
 
-li{
-	line-height: 1.5;
+ol{
+	font-size: 25px;
 }
