@@ -62,3 +62,7 @@ input:checked + label{
   text-align: right;
   font-weight: 900
 }
+
+img {
+	border-radius:15px
+}
