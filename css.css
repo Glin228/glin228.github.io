@@ -59,6 +59,7 @@ input:checked + label{
   display: none;
 }
 
+
 .right{
   text-align: right;
   font-weight: 900
