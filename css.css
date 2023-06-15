@@ -42,3 +42,24 @@ img{
 	border: solid #444 3px;
 	border-radius: 5px;
 }
+
+.red{
+  color: #f00;
+}
+
+input{
+  display: none;
+}
+
+input + label{
+  display: block;
+}
+
+input:checked + label{
+  display: none;
+}
+
+.right{
+  text-align: right;
+  font-weight: 900
+}
