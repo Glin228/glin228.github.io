@@ -14,10 +14,9 @@ body{
 
 .text{
 	color: #eee;
-	font-family: System-UI;
-	text-indent: 1.1em;
-	line-height: 1.5;
-	margin: 0;
+	font-family: monospace;
+	text-indent: 1.5em;
+	line-height: 2;
 }
 
 .big{
@@ -30,7 +29,6 @@ body{
 
 .center{
 	text-align: center;
-	width: content-width;
 }
 
 a{
