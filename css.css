@@ -1,0 +1,44 @@
+.seredina{
+	width: 75%;
+	min-width: 400px;
+	background-color: #333;
+	margin: auto;
+	padding: 10px 25px;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+body{
+	background-color: #111;
+}
+
+.text{
+	color: #eee;
+	font-family: System-UI;
+	text-indent: 1.1em;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.big{
+	font-size: 50px;
+}
+
+.normal{
+	font-size: 35px;
+}
+
+.center{
+	text-align: center;
+	width: content-width;
+}
+
+a{
+	color: #FFC000
+}
+
+img{
+	height: 300px;
+	border: solid #444 3px;
+	border-radius: 5px;
+}
