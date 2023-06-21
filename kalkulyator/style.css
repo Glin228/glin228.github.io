@@ -1,0 +1,52 @@
+.btn{
+	background-color: #FFC000;
+	margin: 2px;
+	box-sizing: border-box;
+	width: 100px;
+	height: 150px;
+	float: left;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+
+#kalkulator{
+	width: 520px;
+}
+
+#result{
+	width: 520px;
+	height: 200px;
+	margin: 2px;
+	background-color: #BBBBBB;
+	overflow: auto;
+}
+
+p{
+	font-family: Helvetica;
+	font-size: 70px;
+	font-weight: 900;
+	align-self: center;
+	text-align: center;
+	line-height: 0;
+}
+
+#history{
+	position: absolute;
+	top: 12px;
+	left: 600px;
+	width: 500px;
+	height: 815px;
+	background-color: #BBBBBB;
+	padding: 5px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+#history p{
+	text-align: left;
+	font-size: 30px;
+	font-family: monospace;
+	font-weight: 500;
+	line-height: 2;
+}
